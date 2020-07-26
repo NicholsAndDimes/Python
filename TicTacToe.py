@@ -95,10 +95,8 @@ def play_again():
 vert_line = f"     |     |     "
 horz_line = f"-----+-----+-----"
 while True:
-    print("game start")
     ticdic = {"1": "1", "2": "2", "3": "3", "4": "4", "5": "5", "6": "6", "7": "7", "8": "8", "9": "9"}
     game_continue = True
     player = "X"
     play_game(player)
-    print("looping")
     play_again()
