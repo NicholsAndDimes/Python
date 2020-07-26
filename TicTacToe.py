@@ -1,10 +1,10 @@
 def play_game(player):
     while True:
+        choice = p_input(player)
+        player = game_replace(choice, player)
         end_game = winning_conditions()
         if end_game is True:
             return
-        choice = p_input(player)
-        player = game_replace(choice, player)
         game_continue = False
         for k, v in ticdic.items():
             if v.isdigit():
