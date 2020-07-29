@@ -66,6 +66,7 @@ def player_hit(player, d):
         print(a)
     p_total = sum([a.value for a in player])
     if p_total > 21 and "Ace" in [a.rank for a in player]:
+        print(f"Total exceeded 21, Ace has been converted into a 1")
         p_total -= 10
     print(f"Total: {p_total}")
     if p_total > 21:
